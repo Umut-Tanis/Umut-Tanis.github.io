@@ -1,49 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umut Tanis</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      .nav-link, a.navbar-brand{
+        color: #212529 !important;
+      }  
+      .nav-link.active {
+          color: #dc3545 !important;
+      }
+    </style>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-
-  <title>Umut Tanis</title>
 </head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="https://twitter.com/umttns" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="umttns" height="30" width="40" /></a></li>
-    </ul>
-    <ul>
-      <li>
-        <img src="https://avatars.githubusercontent.com/u/79799030?s=400&u=52475353311a0e619fe73aef36d4305fc995935c&v=4" height="50" width="105" alt="umut-tanis">
-        <br>
-        <strong>Umut Tanis</strong>
-      </li>
-    </ul>
-    <ul>
-      <li><a href="https://linkedin.com/in/umut-tanis" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="umut-tanis" height="30" width="40" /></a></li>
-    </ul>
-  </nav>
 
-  <article>
-    <header>
-      <h1 align="center">Hi 👋, I'm Umut Tanis</h1>
-      <h3 align="center">JavaScript & React & TypeScript</h3>
-    </header>
-    <h3 align="left">Languages and Tools:</h3>
-    <p align="left"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
-    <blockquote>
-      <strong>"Bu site tamamen deneme amacli yapilmistir. Uzun bir sure uzerinde bir duzenleme yapilmayacaktir."</strong>
-      <footer>
-        <cite>- Saygilarimla!</cite>
-      </footer>
-    </blockquote>
-    <footer>
-     <a href="https://github.com/Umut-Tanis">
-      <p align="center"><img src="./image/github-logo.png" height="60" width="120" alt="github"></p>
-    </a>
-  </footer>
-  </article>
-</div>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Umut Tanış</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav fw-bold">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Hakkımda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolyo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolioDetail">Portfolyo Detayları</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="min-vh-100 d-flex flex-column justify-content-end align-items-center" id="home" style="background-image: url('image/frontend.jpeg'); background-size: cover;">
+        <div class="text-center">
+          <p class="display-3 fw-bold">Umut Tanış</p>
+          <h6 class="fs-3 text-secondary text-capitalize mb-4">Frontend Developer</h6>
+          <a class="btn btn-danger rounded-pill mb-2" href="#about">Hakkımda</a>
+        </div>
+      </section>
+
+      <section class="container py-5" id="about" >
+        <div class="text-center py-5">
+          <h2 class="text-uppercase fw-bold">Hakkımda</h2>
+          <P>Oyun tasarımından yeni bir serüvene yelken açan bir Frontend Developer.</P>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img  class="img-fluid" src="image/umttns.jpg" alt="umuttanis-photo">
+          </div>
+          <div class="col-lg-7 offset-lg-1">
+            <p class="lh-lg">Merhaba ben umut 29 yaşındayım. Oyun sektöründe iki yıldır yer almaktayım ve bağımsız projeler üzerinde oyun tasarımcısı olarak üç farklı projede deneyim kazanmış biriyim. Bu projeler arasında bullet-hell, yarış ve tower defense türlerinde çalıştım. Şimdi, öğrenim sürecimi Frontend Development yolculuğuna dönüştürüyorum ve bu serüveni sizinle paylaşmak burayı sürekli güncelliyerek deneyimlerimi sizlerle paylaşacağım</p>
+
+            <h3 class="fw-bold fs-4">Yetenekler:</h3>
+            <p class="mb-0">HTML:</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" style="width: 99%;">%99</div>
+            </div>
+
+            <p class="mb-0">CSS:</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" style="width: 85%;">%85</div>
+            </div>
+
+            <p class="mb-0">JS:</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-warning" style="width: 35%;">%35</div>
+            </div>
+  
+            <p class="mb-0">BOOTSTRAP 5:</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-danger" style="width: 80%;">%80</div>
+            </div>
+            
+            <p class="mb-0">ANGULAR:</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-dark" style="width: 5%;">%5</div>
+            </div>
+          </div>
+          </div>
+      </section>
+
+      <section id="portfolio" class="bg-dark py-5">
+        <div class="container">
+          <div class="text-white text-center py-5">
+            <h2 class="text-uppercase fw-bold">portfolyo</h2>
+            <p>Game design ve frontend alanında yapış olduğum ve yapacağım çalışmalara güncel olarak ulaşabileceğiniz bölüm.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4"> 
+              <a href="https://team-bixel.itch.io/cosmic-suicide-dance-of-bullets" target="_blank"><img src="image/cosmic.png" alt="cosmic-game" class="img-fluid mb-lg-3 img-thumbnail"></a>
+              <p class="text-capitalize text-white text-center fw-bold">cosmic suicide dance of bullets</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <a href="https://ahmet-melih-islam.itch.io/galactic-grand-prix" target="_blank"><img src="image/ggp-poster.png" alt="galactic-race-game" class="img-fluid mb-lg-3 img-thumbnail"></a>
+              <p class="text-capitalize text-white text-center fw-bold">galactic grand prix</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <a href="https://team-bixel.itch.io/project-t" target="_blank"><img src="image/projectTD.png" alt="td-games" class="img-fluid mb-lg-3 img-thumbnail"></a>
+              <p class="text-capitalize text-white text-center fw-bold">project tower defense</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolioDetail" class="py-5">
+        <div class="container">
+          <div class="text-center py-5">
+            <h2 class="text-uppercase fw-bold">portfolyo hakkında</h2>
+            <p>Game design ve frontend alanında yapış olduğum ve yapacağım çalışmalara güncel olarak açıkladığım bölüm.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img src="image/cosmic.png" alt="cosmic-game" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-center py-2 text-uppercase">cosmic suicide dance of bullets</h5>
+                <p>Bixel ekibi ile üç günlük bir Gamejam'de game designer olarak tasarımında rol aldığım oyunumuzun tarzı 3d bullet-hell olmakla beraber, vampire survivor'dan esinlenmiştir.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img src="image/ggp-poster.png" alt="galactic-race" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center py-2 text-uppercase">galactic grand prix</h5>
+              <p>Hala daha aktif olarak geliştirilmeye devam eden galactic grand prix'in türü sci-fi temalı arcade yarış oyunudur. Farklı gezegenlerde rakiplerinizle yarışırken mario kart oyunundaki gibi rakiplerinizi elemek için yerden topladığınız yetenkleri kullanmanız gerekmetedir.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img src="image/projectTD.png" alt="td-game" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center py-2 text-uppercase">project tower defense</h5>
+              <p>Oynanabilir demo aşamada olan proje oyunumuzun tarzi 2d pixel-art bir tower defans oyunudur. Oyunda yer almış çeşitli bölge ve kralıkları ele geçirmeye çalışan yaratıklara karşı yerleştirdiğimiz kuleler ile bölgeyi savunup kazanmaya çalışıyoruz.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-dark py-5">
+        <div class="container text-light">
+          <div class="text-center py-5">
+            <h2 class="text-uppercase fw-bold">İLETİŞİM</h2>
+            <p>Buraya kadar ilginizi çekebildiysem ve benimle iletişime geçmek istiyorsanız aşağıdan ulaşabilirsiniz.</p>
+          </div>
+          <div>
+            <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 col-sm-10 col-11 mx-auto">
+              <form class="text-white">
+                <div class="mb-3">
+                  <label class="form-label">Ad Soyad</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Enail</label>
+                  <input type="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Konu</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Ad Soyad</label>
+                  <textarea type="text" class="form-control" rows="10"></textarea>
+                </div>
+                <button class=" btn btn-danger btn-lg">Gönder</button>
+              </form>
+            </div>
+          </div>
+      </section>
+
+      <section class="bg-light">
+        <div class="text-center">
+          <p class="fs-5 py-3 mb-0">Tüm hakları saklıdır | <a class="text-danger fst-italic" href="https://www.linkedin.com/in/umut-tanis/">Umut Tanış</a></p>
+        </div>
+      </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
